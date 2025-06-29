@@ -18,26 +18,28 @@ This project simulates a **Vehicular Fog Computing (VFC)** environment and evalu
 
 ## 📂 Dataset
 
-We created and published a custom dataset modeling realistic fog–cloud task scenarios.  
+Created and published a custom dataset modeling realistic fog–cloud task scenarios.  
 📎 [View on Kaggle](https://www.kaggle.com/datasets/sachin26240/vehicularfogcomputing)
 
 ---
 
 ## 🧠 Technologies Used
 
-- Python (Jupyter Notebook)  
-- Numpy, Pandas  
-- Matplotlib  
-- Custom GA, PSO, and DE implementations
+- Python
+- Numpy, Pandas
+- Custom implementations of:
+  - Genetic Algorithm (GA)
+  - Modified Particle Swarm Optimization (PSO)
+  - Differential Evolution (DE)
 
 ---
 
 ## 📊 Key Features
 
 - Simulates execution time and resource cost for multiple task loads  
-- Fitness evaluation and optimization loop for each algorithm  
-- Gantt chart visualization of task allocation  
-- Performance comparison across models using plots
+- Fitness evaluation using a custom utility function  
+- Console-based display of task-to-node allocations  
+- Performance comparison across models via execution metrics
 
 ---
 
@@ -47,9 +49,9 @@ We created and published a custom dataset modeling realistic fog–cloud task sc
 vehicular-fog-computing/
 ├── main.py                             # Console-based simulation driver
 ├── algorithms/                         # Folder for metaheuristic algorithms
+│   ├── differential_evolution.py       # Differential Evolution
 │   ├── genetic_algorithm.py            # Genetic Algorithm
-│   ├── pso_modified.py                 # Modified PSO
-│   └── differential_evolution.py       # Differential Evolution
+│   └── pso_modified.py                 # Modified PSO
 ├── README.md
 ```
 ---
