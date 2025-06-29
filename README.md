@@ -56,10 +56,10 @@ vehicular-fog-computing/
 
 ## 🏁 How to Run
 
-# Step 1: Install required packages
+Step 1: Install required packages
 pip install numpy pandas
 
-# Step 2: Run the simulation script
+Step 2: Run the simulation script
 python main.py
 
 ---
