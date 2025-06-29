@@ -44,44 +44,23 @@ We created and published a custom dataset modeling realistic fog–cloud task sc
 ## 📁 Repository Structure
 
 ```
-vehicular-fog-computing-ml/
-│
-├── main.py # Optional entry point (can run all models)
-├── data/
-│ └── task_generator.py # Task and node setup
-├── algorithms/
-│ ├── genetic_algorithm.py # Genetic Algorithm logic
-│ ├── pso_modified.py # Modified PSO implementation
-│ └── differential_evolution.py # Differential Evolution
-├── utils/
-│ ├── fitness.py # Time and cost fitness functions
-│ └── gantt.py # Gantt chart generation
-├── plots/
-│ └── comparisons.py # Model performance plots
-├── CloudFogComputing.ipynb # Notebook version for demonstration
+vehicular-fog-computing/
+├── main.py                             # Console-based simulation driver
+├── algorithms/                         # Folder for metaheuristic algorithms
+│   ├── genetic_algorithm.py            # Genetic Algorithm
+│   ├── pso_modified.py                 # Modified PSO
+│   └── differential_evolution.py       # Differential Evolution
 ├── README.md
-└── assets/ # Visualizations & screenshots
 ```
 ---
 
 ## 🏁 How to Run
 
-### ▶️ Run the Notebook (for demonstration)
-```bash
-pip install numpy pandas matplotlib
-jupyter notebook CloudFogComputing_v3.ipynb
-```
+# Step 1: Install required packages
+pip install numpy pandas
 
-### 🐍 Run Modular Scripts (once modules are created)
-```bash
-python algorithms/genetic_algorithm.py
-```
-
-Or:
-
-```bash
+# Step 2: Run the simulation script
 python main.py
-```
 
 ---
 
